@@ -1,78 +1,38 @@
-<!doctype html>
-<html lang="en" class="h-100">
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.88.1">
-    <title>Ryan Wilson Portfolio</title>
+    <meta charset="UTF-8" />
+    <title>Bad Bank</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    
+    <link rel="stylesheet" href="style.css">
 
-    <!-- Bootstrap core CSS -->
-<link href="bootstrap.min.css" rel="stylesheet">
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: center;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+    <!-- don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
-    
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="mb-auto">
-    <div>
-      <h3 class="float-md-start mb-0">Ryan Wilson</h3>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        <a class="nav-link" href="Project.html">Projects</a>
-        <a class="nav-link" href="Contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <body>
+    <!-- we will put our teact component inside this div -->
+    <div id="root"></div>
 
-  <main class="px-3">
-    <h1>Bio</h1>
-    <p class="lead">My name is Ryan Wilson and I am a Project Manager for Akrivis Real Estate Valuation Services. 
-                    I have worked in the Real Estate field for the past 16 years and have a drive for learning and problem solving.   
-                    I have always gravitated toward technology and how that could make my tasks easier and more efficient. </p>
-    <p class="lead">
-      <p>Best way to get in contact with me would be email but any of the following will work.</p>
-      <p class="lead">Email: Ryan.Wilson5252@gmail.com</p>
-      <a href="https://www.linkedin.com/in/ryan-wilson-b0504b21b/" class="text-white">Connect on LinkedIn</a>
-      <p class="lead">Phone: (920) 213-2440</p>
- 
-    </p>
-    <iframe width="420" height="315"
-    src="https://youtube.com/embed/iZ1tJpKP31w"></iframe>
-  <img src="01.jpg" alt="Ryan">
-  
-  </main>
-
-  <footer class="mt-auto text-white-50">
-    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
-  </footer>
-</div>
+    <!-- load react -->
+    <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-router@5.2.1/umd/react-router.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-router-dom@5.2.1/umd/react-router-dom.min.js"
+      crossorigin
+    ></script>
+    <!-- load our react component. -->
+    <script src="context.js" defer type="text/babel"></script>
+    <script src="navbar.js" defer type="text/babel"></script>
+    <script src="createaccount.js" defer type="text/babel"></script>
+    <script src="deposit.js" defer type="text/babel"></script>
+    <script src="withdraw.js" defer type="text/babel"></script>
+    <script src="alldata.js" defer type="text/babel"></script>
+    <script src="home.js" defer type="text/babel"></script>
+    <script src="index.js" defer type="text/babel"></script>
 
 
-    
   </body>
 </html>

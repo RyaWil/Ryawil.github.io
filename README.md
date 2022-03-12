@@ -1,1 +1,2 @@
-# Ryawil.github.io
+# Bad-Bank
+Bad Bank Coding Assignment
